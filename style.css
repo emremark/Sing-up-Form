@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    display: flex;
 }
 @font-face {
     font-family: Norse-Bold;
@@ -49,4 +50,23 @@ h2 {
     color: white;
     font-family: 'Courier New', Courier, monospace;
     
+}
+.right {
+    display: flex;
+    height: 100vh;
+    width: calc(2 * 33.33vw);
+    background-color: rgb(240, 237, 237);
+}
+.top p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2em;
+    font-weight: bold;
+    color: black;
+}
+.top {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    justify-content: center;
+    margin-left: 5%;
 }
