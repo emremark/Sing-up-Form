@@ -21,7 +21,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 30%;
+    margin-top: 35%;
     width: 100%;    
     height: 150px;
     background-color: black;
@@ -53,13 +53,14 @@ h2 {
 }
 .right {
     display: flex;
+    flex-direction: column;
     height: 100vh;
     width: calc(2 * 33.33vw);
-    background-color: rgb(240, 237, 237);
+    background-color: rgba(249,250,252,255);
 }
 .top p {
     font-family: 'Courier New', Courier, monospace;
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: bold;
     color: black;
 }
@@ -69,4 +70,56 @@ h2 {
     width: 80%;
     justify-content: center;
     margin-left: 5%;
+    margin-top: 9%;
 }
+.middle {
+    background-color: rgb(255, 255, 255);
+    height: 30%;
+    margin-top: 4%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    font-family: 'Courier New', Courier, monospace;
+}
+.midt h4 {
+    font-size: 1.5em;
+    
+}
+.formdiv {
+    display: flex;
+    margin-left: 5%;
+    flex-wrap: wrap;
+    
+}
+.cont {
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+    width: 100%;
+}
+.lft, .rgt {
+    width: 100%;
+}
+.formdiv {
+    width: 100%; 
+    
+    max-width: 1000px;
+}
+.lft div, .rgt div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2px;
+}
+label {
+    margin-bottom: 2px;
+    
+}
+.lft input, .rgt input { 
+    width: 350px;
+    height: 26px;
+}
+input:invalid {
+    border: 2px solid red;
+  }
+  
+  input:valid {
+    border: 2px solid black;
+  }
